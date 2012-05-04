@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 tmp/*
 public/music/*
-=======
 *.rbc
 *.sassc
 .sass-cache
@@ -18,4 +16,5 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
->>>>>>> 30dc58cd3983df66a6be71dbbf6a29f06bdf85e5
+.DS_Store
+**/.DS_Store
