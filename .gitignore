@@ -1,2 +1,21 @@
+<<<<<<< HEAD
 tmp/*
 public/music/*
+=======
+*.rbc
+*.sassc
+.sass-cache
+capybara-*.html
+.rspec
+/.bundle
+/vendor/bundle
+/log/*
+/tmp/*
+/db/*.sqlite3
+/public/system/*
+/coverage/
+/spec/tmp/*
+**.orig
+rerun.txt
+pickle-email-*.html
+>>>>>>> 30dc58cd3983df66a6be71dbbf6a29f06bdf85e5
