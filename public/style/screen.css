@@ -1,0 +1,22 @@
+html, body {
+  height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+  height: auto;
+  min-height: 100%;
+  width:960px;
+  margin:0 auto;
+	position: relative;
+}
+
+.library {
+  float:right;
+  background:#eee;
+  padding:50px;
+}
