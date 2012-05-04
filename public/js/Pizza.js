@@ -5,6 +5,7 @@
   // pizza hasone sauce
   
   window.Topping = Backbone.Model.extend({});
+  window.Sauce = Backbone.Model.extend({});
   
   // Got to 12mins through 2nd vid.
   
@@ -12,10 +13,15 @@
     model: Topping,
     url: '/toppings'
   });
+  window.Sauces = Backbone.Collection.extend({
+    model: Sauce,
+    url: '/sauces'
+  });
   
   window.Pizza = Toppings.extend({});
   
   window.library = new Toppings();
+  window.sauceList = new Sauces();
   
   window.ToppingView = Backbone.View.extend({
     // className: 'toppings',
@@ -79,11 +85,15 @@
       this.libraryView = new LibraryView({
         collection: window.library
       });
+      this.sauceListView = new LibraryView({
+        collection: window.sauceList
+      });
     },
     
     home: function() {
       $('#container').empty();
-      $('#container').append(this.libraryView.render().el)
+      $('#container').append(this.libraryView.render().el);
+      $('#container').append(this.sauceListView.render().el);
     },
     cart: function() {
       alert('cart');

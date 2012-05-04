@@ -20,9 +20,8 @@
     <script src="js/Pizza.js"></script>
 
     <script type="text/template" id="library-template">
-      <h1>Topping Choices</h1>
+      <h1>Choices</h1>
       <ul class="toppings"></ul>
-      <ul class="sauces"></ul>
     </script>
 
     <script type="text/template" id="topping-template">
@@ -32,6 +31,7 @@
     <script type="application/javascript">
       jQuery(function() {
         window.library.fetch();
+        window.sauceList.fetch();
       });
     </script>
 
